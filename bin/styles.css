@@ -1,0 +1,41 @@
+h3{
+  font-family: Calibri; 
+  font-size: 15pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:#32a4a8; 
+  text-decoration: underline
+}
+body{
+	background-image: url(img.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+table{
+  font-family: Calibri;
+  color:white; 
+  font-size: 11pt; 
+  font-style: normal;
+  font-weight: bold;
+  text-align:; 
+  background-color: #2B2928; 
+  opacity: 0.8;
+  border-collapse: collapse; 
+  border: 0px #5A5553
+}
+.paddingBetweenCols td
+{
+    padding:0 5px 0 0;
+}
+button {
+  background-color : lightgray;
+  border: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 8px;
+  margin: 30px;
+}
