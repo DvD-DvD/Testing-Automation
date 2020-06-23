@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Testingsuite]">
+  <test name="Covid test(failed)">
+    <classes>
+      <class name="selenium2.ExcelTest">
+        <methods>
+          <include name="b_Test"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- selenium2.ExcelTest -->
+    </classes>
+  </test> <!-- Covid test(failed) -->
+</suite> <!-- Failed suite [Testingsuite] -->

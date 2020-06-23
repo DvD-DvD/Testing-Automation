@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>covid</title>
+		<title>CoViD-19 Test Report</title>
 		<link rel="stylesheet" href="styles.css" >
 	</head>
 	<body>
@@ -16,17 +16,17 @@
 					 <input type="number" name="uid" id="uid" required> 
 					</td>				
 				</tr>
-				
+	
 				<tr>
 					<td>FIRST NAME *</td>
 					<td>
-					<input type="text" name="fname" id="fname" required>
+					<input type="text" name="fname" id="fname" pattern = "^[A-Za-z. ]+$" required>
 					</td>
 				</tr>
 				<tr>
 					<td>LAST NAME *</td>
 					<td>
-					<input type="text" name="lname" id="lname" required>
+					<input type="text" name="lname" id="lname" pattern = "^[A-Za-z. ]+$" required>
 					</td>
 				</tr>
 				<tr>
@@ -72,7 +72,7 @@
 				</tr>
 				<tr>
 					<td>LAB DIRECTOR *</td>
-					<td><input type="text" name="lab_director" id="lab_director" required></td>
+					<td><input type="text" name="lab_director" id="lab_director" required pattern = "^[A-Za-z. ]+$"></td>
 				</tr>
 				<tr>
 					<td>TEST METHOD *</td>
@@ -90,16 +90,16 @@
 				</tr>
 			    <tr><td><h3>RESULTS</h3></td></tr>
 				<tr>
-					<td>TEST RESULT *</td>
+					<td>TEST RESULT *</td>	
 					<tr>
 					<td>
-					<input type="radio" id="positive" name="result" value="positive" required>
+					<input type="radio" id="positive" name="result" value="positive" required >
 					<label for="positive">POSITIVE</label>
 					</td>
 					</tr>
 					<tr>
 					<td>
-					<input type="radio" id="negative" name="result" value="negative">
+					<input type="radio" id="negative" name="result" value="negative" required>
 					<label for="negative">NEGATIVE</label>
 					</td>
 					</tr>

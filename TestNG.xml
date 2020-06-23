@@ -1,0 +1,7 @@
+<suite name="Testingsuite">
+	<test name="Covid test">
+		<classes>
+			<class name = "selenium2.ExcelTest" />
+		</classes>
+	</test>
+</suite>

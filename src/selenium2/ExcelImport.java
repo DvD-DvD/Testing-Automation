@@ -13,9 +13,8 @@ import java.util.Vector;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.CellStyle;
-import org.apache.poi.ss.usermodel.Font;
-import org.apache.poi.ss.usermodel.IndexedColors;
+
+
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -30,11 +29,7 @@ public class ExcelImport {
 		Sheet tsSheet = tsWb.getSheet(sheetName);
 		int rowCount = tsSheet.getLastRowNum() - tsSheet.getFirstRowNum() -1;
 		System.out.println("No.of Test Cases :"+ rowCount);
-		CellStyle greencolor  = tsWb.createCellStyle();
-		greencolor.setFillForegroundColor(IndexedColors.GREEN.getIndex());
-
-		CellStyle redcolor  = tsWb.createCellStyle();
-		redcolor.setFillForegroundColor(IndexedColors.RED.getIndex());
+		
 		for(int i= 1 ; i<= rowCount ; i++) {
 			 Row row = tsSheet.getRow(i);
 			 int j=0;
@@ -237,13 +232,13 @@ public class ExcelImport {
 				 Cell cell2 = row.createCell(j);
 				 if(expRes.equals(status)) {
 					 cell2.setCellValue("Passed");
-					 cell2.setCellStyle(greencolor);
+					 System.out.println("\nTest Case: #:" +Integer.toString(i)+" Passed\n");
 				 }
 				 else {
 					 cell2.setCellValue("Failed");
-					 cell2.setCellStyle(redcolor);
+					 System.out.println("\nTest Case: #:" +Integer.toString(i)+" Failed\n");
 				 }
-				 driver.close();
+				// driver.close();
 
 		    }catch(Exception e) {
 		    	e.printStackTrace();
