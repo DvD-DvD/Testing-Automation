@@ -5,7 +5,7 @@
     <classes>
       <class name="selenium2.ExcelTest">
         <methods>
-          <include name="b_Test"/>
+          <include name="a_Test"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
         </methods>
